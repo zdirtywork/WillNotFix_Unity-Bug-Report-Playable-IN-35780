@@ -57,18 +57,20 @@ public class AnimPlayablePauseTest : MonoBehaviour
         _graph.Destroy();
     }
 
-    public void TogglePlayable(bool setTime)
+    public void TogglePlayable(bool temporarilyFix)
     {
-        if (_clipPlayable.GetPlayState() == PlayState.Playing)
+        if (_clipPlayable.GetPlayState() == PlayState.Playing) // Pause
         {
-            _clipPlayable.Pause();
-            if (setTime)
+            if (temporarilyFix)
             {
-                // This line is the temporary fix.
-                _clipPlayable.SetTime(_clipPlayable.GetTime());
+                ((AnimationClipPlayable)_clipPlayable).Pause();
+            }
+            else
+            {
+                _clipPlayable.Pause();
             }
         }
-        else
+        else // Play
         {
             _clipPlayable.Play();
         }
