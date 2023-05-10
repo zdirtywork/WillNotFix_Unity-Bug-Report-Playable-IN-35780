@@ -4,6 +4,8 @@
 
 GameObject does not stop moving when being moved by an `AnimationClipPlayable` and the `AnimationClipPlayable` is paused.
 
+![Sample](./imgs~/img_sample.gif)
+
 ## How to reproduce
 
 1. Open the "SampleScene".
