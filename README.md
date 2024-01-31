@@ -1,4 +1,4 @@
-# Unity-Bug-Report-Playable-IN-35780
+# [Avoidable][Won't Fix] Unity-Bug-Report-Playable-IN-35780
 
 **Unity has stated that they will not fix this bug.**
 
